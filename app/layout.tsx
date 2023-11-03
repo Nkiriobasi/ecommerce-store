@@ -1,8 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.css'
+import BootstrapClient from './components/bootstrapClient'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Rubik } from 'next/font/google'
 import './styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const rubik = Rubik({ subsets: ['latin'], display: 'swap' })
 
 export const metadata: Metadata = {
   title: 'Nk-online-mall',
@@ -16,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={rubik.className}>
+        {children}
+        <BootstrapClient />
+      </body>
     </html>
   )
 }
