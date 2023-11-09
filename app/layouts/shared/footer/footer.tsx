@@ -1,8 +1,8 @@
 import Image from "next/image"
+import Link from "next/link"
 import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs"
 
 import Newsletter from '@/public/images/newsletter.png'
-import CustomLink from "@/app/components/link/link"
 
 const Footer = () => {
   return (
@@ -81,28 +81,28 @@ const Footer = () => {
                     <div className="col-3">
                         <h5 className="text-white mb-4">Information</h5>
                         <div className="footer-links d-flex flex-column">
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Privacy Policy</CustomLink>
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Refund Policy</CustomLink>
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Shipping Policy</CustomLink>
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Terms Of Service</CustomLink>
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Blogs</CustomLink>
+                            <Link href="/#" className="text-white py-2 mb-1">Privacy Policy</Link>
+                            <Link href="/#" className="text-white py-2 mb-1">Refund Policy</Link>
+                            <Link href="/#" className="text-white py-2 mb-1">Shipping Policy</Link>
+                            <Link href="/#" className="text-white py-2 mb-1">Terms Of Service</Link>
+                            <Link href="/#" className="text-white py-2 mb-1">Blogs</Link>
                         </div>
                     </div>
                     <div className="col-3">
                         <h5 className="text-white mb-4">Account</h5>
                         <div className="footer-links d-flex flex-column">
-                            <CustomLink href="/#" className="text-white py-2 mb-1">About Us</CustomLink>
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Faq</CustomLink>
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Contact</CustomLink>
+                            <Link href="/#" className="text-white py-2 mb-1">About Us</Link>
+                            <Link href="/#" className="text-white py-2 mb-1">Faq</Link>
+                            <Link href="/#" className="text-white py-2 mb-1">Contact</Link>
                         </div>
                     </div>
                     <div className="col-2">
                         <h5 className="text-white mb-4">Quick Links</h5>
                         <div className="footer-links d-flex flex-column">
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Laptops</CustomLink>
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Headphones</CustomLink>
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Smart Watches</CustomLink>
-                            <CustomLink href="/#" className="text-white py-2 mb-1">Tablets</CustomLink>
+                            <Link href="/#" className="text-white py-2 mb-1">Laptops</Link>
+                            <Link href="/#" className="text-white py-2 mb-1">Headphones</Link>
+                            <Link href="/#" className="text-white py-2 mb-1">Smart Watches</Link>
+                            <Link href="/#" className="text-white py-2 mb-1">Tablets</Link>
                         </div>
                     </div>
                 </div>

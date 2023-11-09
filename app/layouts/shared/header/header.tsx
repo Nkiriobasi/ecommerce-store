@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { BsSearch } from 'react-icons/bs'
 
 // Images
@@ -7,9 +8,6 @@ import Wishlist from "@/public/images/wishlist.svg"
 import User from "@/public/images/user.svg"
 import Cart from "@/public/images/cart.svg"
 import Menu from "@/public/images/menu.svg"
-
-// Components
-import CustomLink from "@/app/components/link/link"
 
 const Header = () => {
   return (
@@ -39,7 +37,7 @@ const Header = () => {
                 <div className="row align-items-center">
                     <div className="col-2">
                         <h4 className="mb-0">
-                            <CustomLink href='/' className="text-white">Online Mall</CustomLink>
+                            <Link href='/' className="text-white">Online Mall</Link>
                         </h4>
                     </div>
                     <div className="col-5">
@@ -60,25 +58,25 @@ const Header = () => {
                     <div className="col-5">
                         <div className="header-center-links d-flex align-items-center justify-content-between">
                             <div>
-                                <CustomLink href='' className="d-flex align-items-center gap-10">
+                                <Link href='#' className="d-flex align-items-center gap-10">
                                     <Image className="header-center-links-icon" src={Compare} alt="compare" />
                                     <p className="text-white mb-0">Products</p>
-                                </CustomLink>
+                                </Link>
                             </div>
                             <div>
-                                <CustomLink href='' className="d-flex align-items-center gap-10">
+                                <Link href='#' className="d-flex align-items-center gap-10">
                                     <Image className="header-center-links-icon" src={Wishlist} alt="wishlist" />
                                     <p className="text-white mb-0">Wishlist</p>
-                                </CustomLink>
+                                </Link>
                             </div>
                             <div>
-                                <CustomLink href='' className="d-flex align-items-center gap-10">
+                                <Link href='#' className="d-flex align-items-center gap-10">
                                     <Image className="header-center-links-icon" src={User} alt="user" />
                                     <p className="text-white mb-0">My Account</p>
-                                </CustomLink>
+                                </Link>
                             </div>
                             <div>
-                                <CustomLink href='' className="d-flex align-items-center">
+                                <Link href='#' className="d-flex align-items-center">
                                     <div className="position-relative d-flex align-items-center gap-10">
                                         <Image className="header-center-links-icon" src={Cart} alt="cart" />
                                         <span className="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
@@ -87,7 +85,7 @@ const Header = () => {
                                         </span>
                                         <p className="text-white mb-0">$500</p>
                                     </div>
-                                </CustomLink>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -114,13 +112,13 @@ const Header = () => {
                                     </button>
                                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li>
-                                            <CustomLink className="dropdown-item text-white" href="#">Action</CustomLink>
+                                            <Link className="dropdown-item text-white" href="#">Action</Link>
                                         </li>
                                         <li>
-                                            <CustomLink className="dropdown-item text-white" href="#">Another action</CustomLink>
+                                            <Link className="dropdown-item text-white" href="#">Another action</Link>
                                         </li>
                                         <li>
-                                            <CustomLink className="dropdown-item text-white" href="#">Something else here</CustomLink>
+                                            <Link className="dropdown-item text-white" href="#">Something else here</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -128,10 +126,10 @@ const Header = () => {
 
                             <div className="menu-links">
                                 <div className="d-flex align-items-center gap-15">
-                                    <CustomLink href='/'>Home</CustomLink>
-                                    <CustomLink href='/'>Our Store</CustomLink>
-                                    <CustomLink href='/blogs'>Blogs</CustomLink>
-                                    <CustomLink href='/contact'>Contact</CustomLink>
+                                    <Link href='/'>Home</Link>
+                                    <Link href='/'>Our Store</Link>
+                                    <Link href='/blogs'>Blogs</Link>
+                                    <Link href='/contact'>Contact</Link>
                                 </div>
                             </div>
                         </div>
