@@ -1,47 +1,40 @@
-import BlogCard from '@/app/components/blogCard/blogCard'
-import Blog1 from '@/public/images/blog-1.jpg'
+import ProductCard from '../../../components/productCard/productCard'
+import Watch from '@/public/images/watch.jpg'
+import styles from './featuredCollections.module.css'
 
 
 const FeaturedCollections = () => {
   return (
-    <section className="home-wrapper-2 blog-wrapper py-5">
+    <section className="home-wrapper-2 featured-wrapper py-5">
         <div className="container-xxl">
             <div className="col-12">
                 <h4 className="section-heading">Featured Collections</h4>
             </div>
 
-            <div className="row">
-                <BlogCard 
-                    imgSrc={Blog1} 
-                    date="09 Dec. 2023"
-                    title="A Beautiful Sunday Renaissance"
-                    desc={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        A ipsam at deleniti. Enim.`
-                    } 
+            <div className={`${styles.featured_product_container} row`}>
+                <ProductCard 
+                    imgSrc={Watch} 
+                    productBrand='Havels' 
+                    productTitle='Kids headphones bulk 10 pack multi colored for students'
+                    product_price='$100.00' 
                 />
-                <BlogCard 
-                    imgSrc={Blog1} 
-                    date="09 Jan. 2023"
-                    title="A Beautiful Sunday Renaissance"
-                    desc={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        A ipsam at deleniti. Enim.`
-                    }  
+                <ProductCard 
+                    imgSrc={Watch} 
+                    productBrand='Havels' 
+                    productTitle='Kids headphones bulk 10 pack multi colored for students'
+                    product_price='$200.00' 
                 />
-                <BlogCard 
-                    imgSrc={Blog1} 
-                    date="04 Feb. 2023"
-                    title="A Beautiful Sunday Renaissance"
-                    desc={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        A ipsam at deleniti. Enim.`
-                    }  
+                <ProductCard 
+                    imgSrc={Watch} 
+                    productBrand='Havels' 
+                    productTitle='Kids headphones bulk 10 pack multi colored for students'
+                    product_price='$300.00' 
                 />
-                <BlogCard 
-                    imgSrc={Blog1} 
-                    date="12 Aug. 2023"
-                    title="A Beautiful Sunday Renaissance"
-                    desc={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        A ipsam at deleniti. Enim.`
-                    }   
+                <ProductCard 
+                    imgSrc={Watch} 
+                    productBrand='Havels' 
+                    productTitle='Kids headphones bulk 10 pack multi colored for students'
+                    product_price='$400.00' 
                 />
             </div>
         </div>
