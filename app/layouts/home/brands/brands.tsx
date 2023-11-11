@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Marquee from "react-fast-marquee"
+import styles from './brands.module.css'
 
 import Brand1 from '@/public/images/brand-01.png'
 import Brand2 from '@/public/images/brand-02.png'
@@ -16,7 +17,7 @@ const Brands = () => {
         <div className="container-xxl">
             <div className="row">
                 <div className="col-12">
-                    <div className="marquee-inner-wrapper card-wrapper">
+                    <div className={`${styles.marquee_inner_wrapper} card-wrapper`}>
                         <Marquee className="d-flex">
                             <div className="mx-4 w-25">
                                 <Image src={Brand1} alt="brand" />

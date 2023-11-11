@@ -15,6 +15,7 @@ const Banner = () => {
                             src={MainBanner1} 
                             className="img-fluid rounded-3" 
                             alt="main banner" 
+                            priority
                         />
                         <div className="main-banner-content position-absolute">
                             <h4>SUPERCHARGED FOR PROS.</h4>
@@ -31,6 +32,7 @@ const Banner = () => {
                             src={MainBanner} 
                             className="img-fluid rounded-3" 
                             alt="main banner" 
+                            priority
                         />
                         <div className="main-banner-content position-absolute">
                             <h4>SUPERCHARGED FOR PROS.</h4>
