@@ -1,4 +1,5 @@
 import SpecialProduct from "@/app/components/specialProduct/specialProduct"
+import Speaker from '@/public/images/speaker.jpg'
 import styles from './specialProducts.module.css'
 
 const SpecialProducts = () => {
@@ -10,9 +11,24 @@ const SpecialProducts = () => {
         </div>
 
         <div className={`${styles.special_product_container} row`}>
-          <SpecialProduct />
-          <SpecialProduct />
-          <SpecialProduct />
+          <SpecialProduct
+            imgSrc={Speaker} 
+            brand='Havels' 
+            title='Samsung Galaxy Note10+ Mobile Phone'
+            price='$100.00'  
+          />
+          <SpecialProduct
+            imgSrc={Speaker} 
+            brand='Havels' 
+            title='Samsung Galaxy Note10+ Mobile Phone'
+            price='$100.00'  
+          />
+          <SpecialProduct
+            imgSrc={Speaker} 
+            brand='Havels' 
+            title='Samsung Galaxy Note10+ Mobile Phone'
+            price='$100.00'  
+          />
         </div>
       </div>
     </section>

@@ -1,17 +1,17 @@
 import ProductCard from '../../../components/productCard/productCard'
 import Watch from '@/public/images/watch.jpg'
-import styles from './featuredCollections.module.css'
+import styles from './popularProducts.module.css'
 
 
-const FeaturedCollections = () => {
+const PopularProducts = () => {
   return (
-    <section className="home-wrapper-2 featured-wrapper py-5">
+    <section className="home-wrapper-2 popular-wrapper py-5">
         <div className="container-xxl">
             <div className="col-12">
-                <h4 className="section-heading">Featured Collections</h4>
+                <h4 className="section-heading">Our Popular Products</h4>
             </div>
 
-            <div className={`${styles.featured_product_container} row`}>
+            <div className={`${styles.popular_product_container} row`}>
                 <ProductCard 
                     imgSrc={Watch} 
                     brand='Havels' 
@@ -42,4 +42,4 @@ const FeaturedCollections = () => {
   )
 }
 
-export default FeaturedCollections
+export default PopularProducts
