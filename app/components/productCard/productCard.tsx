@@ -12,16 +12,16 @@ import Wish from '@/public/images/wish.svg'
 
 interface ProductCardPropsType {
   imgSrc: StaticImageData
-  productBrand: string
-  productTitle: string
-  product_price: string
+  brand: string
+  title: string
+  price: string
 }
 
 const ProductCard: React.FC<ProductCardPropsType> = ({ 
   imgSrc, 
-  productBrand, 
-  productTitle, 
-  product_price 
+  brand, 
+  title, 
+  price 
 }) => {
 
   return (
@@ -38,8 +38,8 @@ const ProductCard: React.FC<ProductCardPropsType> = ({
         </div>
 
         <div className={`${styles.product_details}`}>
-          <h5 className={`${styles.product_brand} brand`}>{productBrand}</h5>
-          <h5 className={`${styles.product_title}`}>{productTitle}</h5>
+          <h5 className={`${styles.product_brand} brand`}>{brand}</h5>
+          <h5 className={`${styles.product_title}`}>{title}</h5>
           <div className="mb-2">
             <Rating
               size={24}
@@ -47,7 +47,7 @@ const ProductCard: React.FC<ProductCardPropsType> = ({
               readonly={true}
             />
           </div>
-          <p className={`${styles.product_price}`}>{product_price}</p>
+          <p className={`${styles.product_price}`}>{price}</p>
         </div>
 
         <div className={`${styles.action_bar} position-absolute`}>
