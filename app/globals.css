@@ -15,6 +15,7 @@
     --color-ededed: #ededed;
     --color-0000001a: #0000001a;
     --color-1c1c1b: #1c1c1b;
+    --color-777777: #777777;
 }
 a {
     display: inline-block;
@@ -34,6 +35,9 @@ a {
     border-color: inherit;
 }
 
+.gap-6 {
+    gap: 6px;
+}
 .gap-10 {
     gap: 10px;
 }
@@ -57,7 +61,19 @@ a {
     color: var(--color-bf4800);
     font-size: 12px;
 }
-/* General End */
+.gr-12 {
+    width: 100%;
+}
+.gr-6 {
+    width: 50%;
+}
+.gr-4 {
+    width: 33.33%;
+}
+.gr-3 {
+    width: 25%;
+}
+/* General Ends */
 
 /* Header Start */
 .header-top {
@@ -106,7 +122,7 @@ a {
     background-color: transparent;
     color: var(--color-febd69) !important;
 }
-/* Header End */
+/* Header Ends */
 
 /* Footer Start */
 footer {
@@ -124,7 +140,7 @@ footer {
     background-color: var(--color-232f3e);
     color: var(--color-ffffff);
 }
-/* Footer End */
+/* Footer Ends */
 
 /* Home Start */
 
@@ -182,7 +198,7 @@ footer {
     letter-spacing: 0.4;
     color: var(--color-131921);
 }
-/* Home Wrapper-1 End */
+/* Home Wrapper-1 Ends */
 
 /* Home Wrapper-2 Start */
 .home-wrapper-2 {
@@ -191,7 +207,7 @@ footer {
 .services h6, p {
     font-size: 14px;
 } 
-/* Home Wrapper-2 End */
+/* Home Wrapper-2 Ends */
 
 /* Categories Section */
 .categories {
@@ -213,9 +229,76 @@ footer {
     font-size: 14px;
 }
 
-/* Categories Section End */
+/* Categories Section Ends */
 
-/* Home End */
+/* Home Ends */
+
+
+/* Our Store Section */
+.filter-card {
+    background-color: var(--color-ffffff);
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+.filter-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--color-1c1c1b);
+    margin-bottom: 20px;
+}
+.filter-card ul, 
+.filter-card .form-check-label {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--color-777777);
+    cursor: pointer;
+}
+.filter-card .form-check-input:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.25);
+}
+.filter-card .form-check-input:checked {
+    background-color: var(--color-febd69);
+    border-color: var(--color-febd69);
+}
+.sub-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-1c1c1b);
+    margin-bottom: 16px;
+}
+.colors {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.colors li {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.filter-sort-grid {
+    padding: 10px;
+    background-color: var(--color-ffffff);
+    border-radius: 10px;
+}
+.grid-img-container {
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    background-color: var(--color-ededed);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.grid-img-container:hover {
+    opacity: 60%;
+}
+/* Our Store Section Ends */
 
 
 
