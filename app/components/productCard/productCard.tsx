@@ -1,6 +1,7 @@
 "use client"
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import Image, { StaticImageData } from 'next/image'
 import { Rating } from 'react-simple-star-rating'
 import styles from './product.module.css'
@@ -15,17 +16,20 @@ interface ProductCardPropsType {
   brand: string
   title: string
   price: string
+  grid?: number
 }
 
 const ProductCard: React.FC<ProductCardPropsType> = ({ 
   imgSrc, 
   brand, 
   title, 
-  price 
+  price,
+  grid
 }) => {
+  const pathname = usePathname()
 
   return (
-    <div className={`${styles.product} col-3 px-2`}>
+    <div className={`${pathname == '/store' ? `gr-${grid}` : 'col-3'} p-2`}>
       <div className={`${styles.product_card} position-relative`}>
         <div className={`${styles.wishlist} position-absolute`}>
           <Link href='' className={`${styles.action_bar_icon}`}>
@@ -34,7 +38,7 @@ const ProductCard: React.FC<ProductCardPropsType> = ({
         </div>
 
         <div className={styles.product_image}>
-          <Image src={imgSrc} alt='product' className='img-fluid' />
+          <Image src={imgSrc} alt='product' className='img-fluid' style={{ width: '100%'}} />
         </div>
 
         <div className={`${styles.product_details}`}>
