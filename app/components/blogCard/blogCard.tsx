@@ -16,10 +16,15 @@ const BlogCard: React.FC<BlogCardPropsType> = ({
     desc 
 }) => {
   return (
-    <div className="col-3 px-2">
+    <div className={`${styles.blog_card_wrapper}`}>
         <div className={`${styles.blog_card}`}>
             <div className={`${styles.card_image}`}>
-                <Image src={imgSrc} alt='blog' className='img-fluid' />
+                <Image 
+                    src={imgSrc} 
+                    alt='blog' 
+                    className='img-fluid w-100' 
+                    priority 
+                />
             </div>
             
             <div className={`${styles.blog_content}`}>

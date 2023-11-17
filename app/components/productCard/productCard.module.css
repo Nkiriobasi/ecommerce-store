@@ -36,7 +36,7 @@
     margin-bottom: 0;
 }
 .action_bar {
-    top: 11%;
+    top: 48px;
     right: -23px;
     transition: 0.4s;
 }
@@ -50,4 +50,8 @@
 }
 .action_bar_icon:hover {
     background-color: var(--color-f5f5f7);
+}
+.action_bar_icon img {
+    width: 14px;
+    height: 14px;
 }

@@ -1,6 +1,12 @@
+.blog_card_wrapper {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
 .blog_card {
     background-color: white;
     border-radius: 10px;
+    width: 100%;
 }
 .blog_card img {
     border-top-right-radius: 10px;

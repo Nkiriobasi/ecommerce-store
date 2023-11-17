@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image, { StaticImageData } from 'next/image'
 import { Rating } from 'react-simple-star-rating'
-import styles from './product.module.css'
+import styles from './productCard.module.css'
 
 import addCart from '@/public/images/add-cart.svg'
 import View from '@/public/images/view.svg'
