@@ -20,6 +20,8 @@ const Footer = () => {
                         <div className="input-group">
                             <input 
                                 type="text" 
+                                name="yourEmail"
+                                id="yourEmail"
                                 className="form-control py-1" 
                                 placeholder="Your Email" 
                                 aria-label="Your Email" 

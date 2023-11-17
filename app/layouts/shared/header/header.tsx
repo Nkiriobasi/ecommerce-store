@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { BsSearch } from 'react-icons/bs'
 
 // Images
-import Compare from "@/public/images/compare.svg"
 import Wishlist from "@/public/images/wishlist.svg"
 import User from "@/public/images/user.svg"
 import Cart from "@/public/images/cart.svg"
@@ -44,6 +43,8 @@ const Header = () => {
                         <div className="input-group">
                             <input 
                                 type="text" 
+                                name='searchProductValue'
+                                id='searchProductValue'
                                 className="form-control py-2" 
                                 placeholder="Search Product..." 
                                 aria-label="Search Product..." 
@@ -58,19 +59,13 @@ const Header = () => {
                     <div className="col-5">
                         <div className="header-center-links d-flex align-items-center justify-content-between">
                             <div>
-                                <Link href='#' className="d-flex align-items-center gap-10">
-                                    <Image className="header-center-links-icon" src={Compare} alt="compare" />
-                                    <p className="text-white mb-0">Products</p>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link href='#' className="d-flex align-items-center gap-10">
+                                <Link href='/wishlist' className="d-flex align-items-center gap-10">
                                     <Image className="header-center-links-icon" src={Wishlist} alt="wishlist" />
                                     <p className="text-white mb-0">Wishlist</p>
                                 </Link>
                             </div>
                             <div>
-                                <Link href='#' className="d-flex align-items-center gap-10">
+                                <Link href='/account' className="d-flex align-items-center gap-10">
                                     <Image className="header-center-links-icon" src={User} alt="user" />
                                     <p className="text-white mb-0">My Account</p>
                                 </Link>
