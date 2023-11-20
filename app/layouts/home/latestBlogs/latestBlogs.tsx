@@ -5,12 +5,12 @@ import Blog1 from '@/public/images/blog-1.jpg'
 const LatestBlogs = () => {
   return (
     <section className="home-wrapper-2 blog-wrapper py-5">
-        <div className="container-xxl">
-            <div className="col-12">
+        <div className="container-xxl px-0">
+            <div className="col-12 px-2">
                 <h4 className="section-heading">Our Latest Blogs</h4>
             </div>
 
-            <div className="row">
+            <div className="d-flex">
                 <BlogCard 
                     imgSrc={Blog1} 
                     date="09 Dec. 2023"

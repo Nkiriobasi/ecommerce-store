@@ -22,8 +22,8 @@ const ContactUs = () => {
                     <input 
                         type="email" 
                         placeholder='Email'
-                        name='emailAddress'
-                        id='emailAddress'
+                        name='email'
+                        id='email'
                         className='form-control' 
                     />
                 </div>

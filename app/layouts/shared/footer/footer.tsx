@@ -83,19 +83,19 @@ const Footer = () => {
                     <div className="col-3">
                         <h5 className="text-white mb-4">Information</h5>
                         <div className="footer-links d-flex flex-column">
-                            <Link href="/#" className="text-white py-2 mb-1">Privacy Policy</Link>
-                            <Link href="/#" className="text-white py-2 mb-1">Refund Policy</Link>
-                            <Link href="/#" className="text-white py-2 mb-1">Shipping Policy</Link>
-                            <Link href="/#" className="text-white py-2 mb-1">Terms Of Service</Link>
-                            <Link href="/#" className="text-white py-2 mb-1">Blogs</Link>
+                            <Link href="/privacy-policy" className="text-white py-2 mb-1">Privacy Policy</Link>
+                            <Link href="/refund-policy" className="text-white py-2 mb-1">Refund Policy</Link>
+                            <Link href="/shipping-policy" className="text-white py-2 mb-1">Shipping Policy</Link>
+                            <Link href="/tos" className="text-white py-2 mb-1">Terms Of Service</Link>
+                            <Link href="/blogs" className="text-white py-2 mb-1">Blogs</Link>
                         </div>
                     </div>
                     <div className="col-3">
                         <h5 className="text-white mb-4">Account</h5>
                         <div className="footer-links d-flex flex-column">
-                            <Link href="/#" className="text-white py-2 mb-1">About Us</Link>
-                            <Link href="/#" className="text-white py-2 mb-1">Faq</Link>
-                            <Link href="/#" className="text-white py-2 mb-1">Contact</Link>
+                            <Link href="/about" className="text-white py-2 mb-1">About Us</Link>
+                            <Link href="/faq" className="text-white py-2 mb-1">Faq</Link>
+                            <Link href="/contact" className="text-white py-2 mb-1">Contact</Link>
                         </div>
                     </div>
                     <div className="col-2">

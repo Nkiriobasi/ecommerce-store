@@ -65,7 +65,7 @@ const Header = () => {
                                 </Link>
                             </div>
                             <div>
-                                <Link href='/account' className="d-flex align-items-center gap-10">
+                                <Link href='/auth/login' className="d-flex align-items-center gap-10">
                                     <Image className="header-center-links-icon" src={User} alt="user" />
                                     <p className="text-white mb-0">My Account</p>
                                 </Link>
@@ -122,7 +122,7 @@ const Header = () => {
                             <div className="menu-links">
                                 <div className="d-flex align-items-center gap-15">
                                     <Link href='/'>Home</Link>
-                                    <Link href='/store'>Our Store</Link>
+                                    <Link href='/collections/store'>Our Store</Link>
                                     <Link href='/blogs'>Blogs</Link>
                                     <Link href='/contact'>Contact</Link>
                                 </div>

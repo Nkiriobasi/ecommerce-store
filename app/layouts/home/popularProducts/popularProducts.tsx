@@ -2,7 +2,6 @@ import ProductCard from '../../../components/productCard/productCard'
 import Watch from '@/public/images/watch.jpg'
 import styles from './popularProducts.module.css'
 
-
 const PopularProducts = () => {
   return (
     <section className="home-wrapper-2 popular-wrapper py-5">
